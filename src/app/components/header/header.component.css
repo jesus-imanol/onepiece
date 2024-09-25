@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    -webkit-box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
+-moz-box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
+box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
+}
+.logo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    color: #696969;
+
+}
+li {
+    list-style-type: none;
+    font-size: 2em;
+}
+img {
+    width: 40%;
+    height: auto;
+}

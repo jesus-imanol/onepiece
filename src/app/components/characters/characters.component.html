@@ -1,0 +1,23 @@
+<section>
+    <div class="character-container">
+        <div class="character-info" [@fadeIn]>
+          <h2>{{ currentCharacter.name }}</h2>
+          <p>{{ currentCharacter.description }}</p>
+        </div>
+        <div class="character-image" [@fadeIn]>
+          <img [src]="currentCharacter.img" alt="{{ currentCharacter.name }}">
+        </div>
+      </div>
+      <button (click)="nextCharacter()">Next →</button>
+</section>
+<div class="clips">
+  <div>
+    <h2 class="info-text">Popular Clips</h2>
+  </div>
+  <div>
+    <h2 class="info-text">View All</h2>
+  </div>
+</div>
+<div class="images" >
+  <img *ngFor="let item of imgs" src={{item.img}} alt="">
+</div>

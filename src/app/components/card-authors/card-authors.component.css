@@ -1,0 +1,36 @@
+.image-author {
+    display: flex;
+    padding: 1%;
+    width: 40%;
+    height: 100%;
+    padding: 1%;
+}
+img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.description-author {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 60%;
+}
+.description-author h2 {
+    color: #FF6F61;
+    font-size: 36px;
+}
+.description-author p {
+    color: #696969;
+    font-size: 15px;
+}
+.main {
+    width: 70%;
+    height: 80%;
+    background-color: #D9D9D9;
+    display: flex;
+    border: 2px solid #696969;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

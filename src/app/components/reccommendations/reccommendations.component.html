@@ -1,0 +1,24 @@
+<section class="section-reccomendations">
+<div class="reccomendation-cards">
+      <app-card *ngFor="let cardx of cards " [card]="cardx"></app-card>
+</div>
+<div class="reccommendation">
+    
+    <div class="image-super">
+        <img src="./assets/supernova.svg" alt="SUPER NOVA   ">
+    </div >
+    <div class="description-super">
+        <div class="title">
+            <h1>LUFFY DECLARA LA GUERRA A KAIDO
+            </h1>
+        </div>
+        <div class="description-topic">
+            <p>"Luffy desafía a Kaido no solo por poder, sino para liberar a la gente de Wano y cumplir su promesa de que todos podrán comer sin restricciones. Este conflicto marca uno de los enfrentamientos más épicos de la serie."</p>
+        </div>
+    </div>
+</div>
+<div class="authors">
+ <app-card-authors *ngFor="let authors of authorss" [authors]="authors" class="authors-cards"></app-card-authors>
+ 
+</div>
+</section>
