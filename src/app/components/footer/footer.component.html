@@ -1,6 +1,6 @@
 <div class="footer-one">
 <div class="icons">
-    <img *ngFor="let icon of icons" src={{icon.img}}>
+    <img *ngFor="let icon of icons" src={{icon.img}} routerLink={{icon.linkTo}}>
 </div>
 <div class="references">
     <li *ngFor="let item of references">{{item.text}}</li>

@@ -3,24 +3,23 @@ header {
     height: 20vh;
     display: flex;
     -webkit-box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
--moz-box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
-box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
+    box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
 }
 .logo {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    
 
 }
 .options {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 60%;
+    width: 50%;
     height: 100%;
     justify-content: flex-start;
     align-items: center;
@@ -30,9 +29,11 @@ box-shadow: 10px 10px 39px -16px rgba(0,0,0,0.39);
 }
 li {
     list-style-type: none;
-    font-size: 2em;
+    font-size: 24px ;
+   cursor: pointer;
 }
 img {
-    width: 40%;
+    width: 30%;
     height: auto;
+    cursor: pointer;    
 }

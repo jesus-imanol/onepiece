@@ -1,23 +1,31 @@
 <section>
+  <div class="text">
+    <h5>NAKAMAS DE MONKEY D. LUFFY</h5>
+  </div>
     <div class="character-container">
-        <div class="character-info" [@fadeIn]>
+        <div class="character-info">
           <h2>{{ currentCharacter.name }}</h2>
           <p>{{ currentCharacter.description }}</p>
         </div>
-        <div class="character-image" [@fadeIn]>
+        <div class="character-image">
+          <div class="next">
+          <button (click)="nextCharacter()">Next →</button>
+        </div> 
           <img [src]="currentCharacter.img" alt="{{ currentCharacter.name }}">
         </div>
       </div>
-      <button (click)="nextCharacter()">Next →</button>
+      
 </section>
-<div class="clips">
-  <div>
-    <h2 class="info-text">Popular Clips</h2>
+<section class="clips-cards">
+  <div class="clips">
+    <div>
+      <h2 class="info-text">Popular Clips</h2>
+    </div>
+    <div>
+      <h2 class="info-text">View All</h2>
+    </div>
   </div>
-  <div>
-    <h2 class="info-text">View All</h2>
+  <div class="images" >
+    <img *ngFor="let item of imgs" src={{item.img}} alt="image">
   </div>
-</div>
-<div class="images" >
-  <img *ngFor="let item of imgs" src={{item.img}} alt="">
-</div>
+</section>
